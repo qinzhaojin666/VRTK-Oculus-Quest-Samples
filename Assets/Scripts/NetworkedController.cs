@@ -68,5 +68,8 @@ public class NetworkedController : MonoBehaviourPunCallbacks
     private void CreatePlayer()
     {
         PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "RightHandPrefab"), Vector3.zero, Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "LeftHandPrefab"), Vector3.zero, Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "HeadPrefab"), Vector3.zero, Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "VoiceView"), Vector3.zero, Quaternion.identity, 0);
     }
 }
